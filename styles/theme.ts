@@ -24,6 +24,10 @@ const customTheme: DefaultTheme = {
             ...theme.colors.purple,
             500: '#8257e5'
         },
+        green: {
+            ...theme.colors.green,
+            500: '#04d361'
+        },
         gray: {
             ...theme.colors.gray,
             300: '#e1e1e6',

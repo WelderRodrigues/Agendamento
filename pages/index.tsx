@@ -80,8 +80,8 @@ export default function Home() {
         <Divider/>
 
         <Flex alignItems='center'>
-          <Text fontSize='sm'>99157-2030</Text>
-          <Text fontSize='sm' marginLeft={1}>98115-1551</Text>
+          <Text fontSize='lg' maxWidth="135px">(99) 99157-2030 (99) 98215-1551</Text>
+          
           
           
           <Button
@@ -90,7 +90,7 @@ export default function Home() {
           borderRightColor='gray.600'
           marginLeft={5}
           borderRadius='sm'
-          _hover={{backgroundColor: 'purple.500'}}>
+          _hover={{backgroundColor: 'green.500'}}>
             WHATSAPP
           </Button>
 
