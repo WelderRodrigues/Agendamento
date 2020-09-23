@@ -1,12 +1,13 @@
 import { FormEvent, useState } from "react";
-import { Flex, Input, Textarea, Button, Text, Image } from "@chakra-ui/core";
+import { Flex, Input, Textarea, Button, Text, Image, Link } from "@chakra-ui/core";
 import axios from 'axios'
-
+import BasicUsage from '../components/Modal'
 
 export default function Home() {
   const [name, setName] = useState("");
   const [number, setNumber] = useState("");
   const [address, setAddress] = useState("");
+  const whatsapp = +5599991630729
 
   function handleSignUpToNewsbudget(event: FormEvent) {
     event.preventDefault();
@@ -71,9 +72,11 @@ export default function Home() {
           height="50px"
           borderRadius="sm"
           marginTop={6}
-          _hover={{ backgroundColor: "purple.600" }}
+          //_hover={{ backgroundColor: "purple.600" }}
+         
         >
-          INSCREVER
+          <BasicUsage/>
+          
         </Button>
 
         <Text textAlign="center" fontSize="sm" color="gray.300" marginTop={6}>
@@ -85,16 +88,22 @@ export default function Home() {
             (99) 99157-2030 (99) 98215-1551
           </Text>
 
-          <Button
+          <Link
             height="50px"
             flex="1"
             borderRightColor="gray.600"
             marginLeft={5}
             borderRadius="sm"
             _hover={{ backgroundColor: "green.500" }}
+            display='flex'
+            alignItems='center'
+            justifyContent='center'
+            cursor='pointer'
+            target='_blank'
+            href={`https://wa.me/${whatsapp}`}
           >
             WHATSAPP
-          </Button>
+          </Link>
         </Flex>
       </Flex>
     </Flex>
