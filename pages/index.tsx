@@ -7,7 +7,7 @@ export default function Home() {
   const [name, setName] = useState("");
   const [number, setNumber] = useState("");
   const [address, setAddress] = useState("");
-  const whatsapp = +5599991630729
+  const whatsapp = +5599982042501
 
   function handleSignUpToNewsbudget(event: FormEvent) {
     event.preventDefault();
